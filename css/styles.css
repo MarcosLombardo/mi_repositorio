@@ -71,7 +71,7 @@ body{
     transform: translate(0);
 }
 
-menu.menu-navegacion a{
+.menu-navegacion a{
     color: white;
     text-decoration: none;
 }
