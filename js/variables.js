@@ -33,11 +33,11 @@ const shoppingCartItemsContainer = document.querySelector(
 
 function addToCartClicked(event) {
   const button = event.target;
-  const item = button.closest('.cont-ticket');
+  const item = button.closest('.item');
 
-  const itemTitle = item.querySelector('.ticket-title').textContent;
-  const itemPrice = item.querySelector('.ticket-price').textContent;
-  const itemImage = item.querySelector('.ticket-image').src;
+  const itemTitle = item.querySelector('.item-title').textContent;
+  const itemPrice = item.querySelector('.item-price').textContent;
+  const itemImage = item.querySelector('.item-image').src;
 
   addItemToShoppingCart(itemTitle, itemPrice, itemImage);
 }
@@ -108,7 +108,7 @@ function updateShoppingCartTotal() {
       '.shoppingCartItemPrice'
     );
     const shoppingCartItemPrice = Number(
-      shoppingCartItemPriceElement.textContent.replace('uSd', '')
+      shoppingCartItemPriceElement.textContent.replace('€', '')
     );
     const shoppingCartItemQuantityElement = shoppingCartItem.querySelector(
       '.shoppingCartItemQuantity'
@@ -118,7 +118,7 @@ function updateShoppingCartTotal() {
     );
     total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
   });
-  shoppingCartTotal.innerHTML = `${total.toFixed(2)}u$d`;
+  shoppingCartTotal.innerHTML = `${total.toFixed(2)}€`;
 }
 
 function removeShoppingCartItem(event) {
