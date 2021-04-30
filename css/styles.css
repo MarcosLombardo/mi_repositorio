@@ -90,11 +90,13 @@ menu.menu-navegacion a{
 
 .subtitulo{
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
     color: black;
     margin-bottom: 40px;
     font-size: 40px;
 }
+
+/*planifica */
 
 .contenedor-planifica{
     display: flex;
@@ -133,6 +135,8 @@ menu.menu-navegacion a{
     line-height: 30px;
     margin-right: 5px;
 }
+
+/* galeria */
 
 .gallery{
     background: rgb(245, 245, 245);
@@ -191,6 +195,8 @@ menu.menu-navegacion a{
     cursor: pointer;
 }
 
+/* tickets */
+
 .tic{
     display: flex;
     justify-content: space-evenly;
@@ -216,6 +222,34 @@ menu.menu-navegacion a{
     width: 100%;
     font-weight: 400;
 }
+
+.ticket-details {
+    margin: 10px;
+}
+  
+.ticket-price {
+    margin: 10px;
+}
+
+.boton{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 450;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid black;
+    text-decoration: none;
+    margin: 10px;
+}
+
+  .boton:hover{
+    color: black;
+    background-color: rgba(244, 165, 96, 0.3);
+}
+
+/* footer */
 
 footer{
     background: rgb(245, 245, 245);
@@ -280,6 +314,35 @@ footer{
     background: black;
     margin-bottom: 60px;
 }
+
+/* Carrito */
+
+.shopping-cart-items {
+    padding: 20px 0px;
+}
+  
+.shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+}
+  
+.shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+}
+  
+.shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+}
+  
+.shopping-cart-total {
+    min-height: 96px;
+}
+
+/* pantalla */
 
 @media screen and (max-width:800px){
     .menu-navegacion{
@@ -373,3 +436,4 @@ footer{
         width: 90%;
     }
 }
+
