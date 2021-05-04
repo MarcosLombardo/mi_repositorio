@@ -242,9 +242,11 @@ body{
     border: 1px solid black;
     text-decoration: none;
     margin: 10px;
+    cursor: pointer;
+    margin-left: 100px;
 }
 
-  .boton:hover{
+.boton:hover{
     color: black;
     background-color: rgba(244, 165, 96, 0.3);
 }
@@ -316,6 +318,13 @@ footer{
 }
 
 /* Carrito */
+.contenedor-carrito{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 
 .shopping-cart-items {
     padding: 20px 0px;
@@ -340,6 +349,34 @@ footer{
   
 .shopping-cart-total {
     min-height: 96px;
+}
+
+.item {
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 20px;
+}
+  
+.item-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+  
+.item-image {
+    height: 300px;
+    width: 100%;
+}
+  
+.item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px 15px;
+}
+  
+.item-details > .item-price {
+    margin: 0;
 }
 
 /* pantalla */
@@ -436,4 +473,5 @@ footer{
         width: 90%;
     }
 }
+
 
